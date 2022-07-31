@@ -42,7 +42,7 @@ a {
   color: #42b983;
 }
 .themed {
-  background: purple;
+  background: #5a49e4;
   color: white
 }
 

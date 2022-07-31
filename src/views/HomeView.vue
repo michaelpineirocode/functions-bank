@@ -1,11 +1,16 @@
 <template>
   <div class="home">
-    <img alt="Generic Image" src="../assets/logo.png" />
+    <img alt="Generic Image"
+      src="../assets/homelogo1.png"
+      contain
+      height="400"
+      width="300"
+      />
     <div>
       <login-button 
         buttonText="Login with Google"
         class="themed baseButton"
-        style="margin-top: 100px"/>
+        style="margin-top: 20px"/>
     </div>
   </div>
 </template>
