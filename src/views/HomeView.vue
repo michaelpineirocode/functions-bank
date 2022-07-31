@@ -1,30 +1,26 @@
 <template>
   <div class="home">
-    <img alt="No bitches" src="../assets/logo.png" />
-    <Home msg="No bitches?" />
+    <img alt="Generic Image" src="../assets/logo.png" />
+    <Home msg="Functions Bank" />
+    <login-button buttonText="Login with Google" class="themed baseButton"/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Home from "@/components/HomeComponent.vue";
-import { googleSignIn } from "../services/FirebaseAuthService";
+import LoginButton from "@/components/LoginButton.vue";
 
 export default {
   name: "HomeView",
   components: {
-    Home,
-  },
-  data() {
-    return {
-      signedIn: false,
-    };
-  },
-  methods: {
-    async signIn() {
-      const user = await googleSignIn();
-      this.signedIn == !!user;
-    },
+    LoginButton,
   },
 };
 </script>
+
+<style>
+#app {
+  display: flex;
+  flex-direction: column;
+}
+</style>
