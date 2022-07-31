@@ -7,12 +7,24 @@
 
 <script>
 // @ is an alias to /src
-import Home from "@/components/Home.vue";
+import Home from "@/components/HomeComponent.vue";
+import { googleSignIn } from "../services/FirebaseAuthService";
 
 export default {
   name: "HomeView",
   components: {
     Home,
+  },
+  data() {
+    return {
+      signedIn: false,
+    };
+  },
+  methods: {
+    async signIn() {
+      const user = await googleSignIn();
+      this.signedIn == !!user;
+    },
   },
 };
 </script>
