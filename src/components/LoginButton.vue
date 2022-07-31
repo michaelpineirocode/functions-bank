@@ -19,7 +19,6 @@ export default {
   },
   methods: {
     login() {
-      console.log("Button was pressed!")
       googleLogin();
     }
   }
