@@ -1,8 +1,12 @@
 <template>
   <div class="home">
     <img alt="Generic Image" src="../assets/logo.png" />
-    <Home msg="Functions Bank" />
-    <login-button buttonText="Login with Google" class="themed baseButton"/>
+    <div>
+      <login-button 
+        buttonText="Login with Google"
+        class="themed baseButton"
+        style="margin-top: 100px"/>
+    </div>
   </div>
 </template>
 
