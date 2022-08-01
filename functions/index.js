@@ -9,5 +9,5 @@ const userService = require("./UserService")
 //   response.send("Hello from Firebase!");
 // });
 
-exports.createUser = userService.createUser
-exports.isUser = userService.isUser
+exports.createUser = userService.createUser()
+exports.isUser = userService.isUser()
