@@ -1,5 +1,5 @@
 const functions = require("firebase-functions");
-const userService = require("./services/UserService")
+const userService = require("./UserService")
 
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions
@@ -9,4 +9,5 @@ const userService = require("./services/UserService")
 //   response.send("Hello from Firebase!");
 // });
 
-exports.userService = userService.userService
+exports.createUser = userService.createUser
+exports.isUser = userService.isUser
